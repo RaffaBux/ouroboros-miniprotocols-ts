@@ -98,6 +98,7 @@ export class PeerAddressIPv6
     {
         return Cbor.encode( this.toCborObj() );
     }
+    
     toCborObj(): CborArray
     {
         if( this.isV13() )

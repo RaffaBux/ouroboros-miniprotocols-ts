@@ -47,6 +47,7 @@ export class PeerAddressIPv4 implements IPeerAddressIPv4, ToCbor
     {
         return Cbor.encode( this.toCborObj() );
     }
+
     toCborObj(): CborArray
     {
         return new CborArray([
@@ -60,6 +61,7 @@ export class PeerAddressIPv4 implements IPeerAddressIPv4, ToCbor
     {
         return PeerAddressIPv4.fromCborObj( Cbor.parse( forceCborString( cbor ) ) );
     }
+    
     static fromCborObj( cbor: CborObj ): PeerAddressIPv4
     {
         if(!(

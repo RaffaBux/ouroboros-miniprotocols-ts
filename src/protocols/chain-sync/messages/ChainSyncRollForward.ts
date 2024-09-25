@@ -1,4 +1,4 @@
-import { CanBeCborString, Cbor, CborArray, CborBytes, CborObj, CborString, CborTag, CborUInt, LazyCborArray, ToCbor, ToCborObj, forceCborString, isCborObj } from "@harmoniclabs/cbor";
+import { CanBeCborString, Cbor, CborArray, CborObj, CborString, CborUInt, LazyCborArray, ToCbor, ToCborObj, forceCborString, isCborObj } from "@harmoniclabs/cbor";
 import { ChainTip, IChainTip, isIChainTip } from "../../types/ChainTip";
 import { getCborBytesDescriptor } from "../../utils/getCborBytesDescriptor";
 
